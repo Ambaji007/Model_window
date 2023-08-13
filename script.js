@@ -17,6 +17,7 @@ let closeBtn = document.querySelector('.close-modal');
 
 // let model_window=  document.querySelector('.hidden');
 
+//Here we do Refactoring
 const openModel = 
     function(){
         console.log('Button Clicked');
@@ -32,6 +33,7 @@ for(let i = 0; i < show_model.length; i++){
 
 }
 
+//Here we do Refactoring
 const hideContent = function(){
     //Here we Add Class 
    modal.classList.add('hidden');
