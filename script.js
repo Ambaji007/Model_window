@@ -50,6 +50,47 @@ overLay.addEventListener('click', hideContent);
 
 
 
+const escHide = function(event){
+    // console.log("Key pressed"); Here we checking funtion working or not...
+    // console.log(event); printing event object
+    // console.log(event.key); Accesing the key from event object 
+
+   if(event.key ==='Escape' ){
+    // if(!modal.classList.contains('hidden')){
+    //     hideContent();
+
+    // }
+   //or Simple call  hideContent();
+   hideContent();
+
+    // console.log('You clicked Escape');
+
+   }
+    console.log(event.key);
+}
+
+
+//Here We hideContent is a function but we do not give any {'()'} over there because with {'()'} function will excuted fastly...... When we write without {'()'} it will run after condition is satisfied.... 
+
+closeBtn.addEventListener('click', hideContent)
+
+overLay.addEventListener('click', hideContent);
+
+
+//KeyBoard Events are Globel Events...
+//Three types of functions in KeyBoard Events
+//they are KEYUP,KEYDOWN, KERPRESS
+document.addEventListener('keydown', escHide)
+
+
+
+
+
+
+
+
+
+
 
 
 
